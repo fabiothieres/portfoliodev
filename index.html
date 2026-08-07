@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabio Henrique — Desenvolvedor Full-Stack</title>
+  <meta name="description" content="Portfólio de Fabio Henrique — Desenvolvedor Full-Stack especializado em React, JavaScript, Firebase e criação de experiências web modernas." />
+  <meta name="author" content="Fabio Henrique" />
+  <meta property="og:title" content="Fabio Henrique — Desenvolvedor Full-Stack" />
+  <meta property="og:description" content="Transformo ideias em experiências digitais. Focado em criar soluções web modernas e performáticas." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Fabio Thieres<span>.</span></a>
+      <div class="nav-links">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#stack" class="nav-link">Stack</a>
+        <a href="#projetos" class="nav-link">Projetos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </div>
+      <div class="nav-actions">
+        <button class="nav-btn" id="dark-mode-toggle" aria-label="Alternar tema">
+          <i data-lucide="sun" class="icon-sun"></i>
+          <i data-lucide="moon" class="icon-moon"></i>
+        </button>
+        <button class="nav-btn mobile-menu-btn" id="mobile-menu-open" aria-label="Abrir menu">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Fechar menu">
+      <i data-lucide="x"></i>
+    </button>
+    <a href="#sobre" class="mobile-nav-link">Sobre</a>
+    <a href="#servicos" class="mobile-nav-link">Serviços</a>
+    <a href="#stack" class="mobile-nav-link">Stack</a>
+    <a href="#projetos" class="mobile-nav-link">Projetos</a>
+    <a href="#contato" class="mobile-nav-link">Contato</a>
+  </div>
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-greeting reveal" style="--i:0">
+              <span class="available-dot"></span>
+              Disponível para projetos
+            </div>
+            <h1 class="hero-name reveal" style="--i:1">Fabio Thieres</h1>
+            <div class="hero-subtitle reveal" style="--i:2">
+              <span id="typing-text"></span><span class="cursor-blink"></span>
+            </div>
+            <p class="hero-description reveal" style="--i:3">
+              Transformo ideias em experiências digitais. Focado em criar soluções web modernas, performáticas e que geram resultado real para o seu negócio.
+            </p>
+            <div class="hero-buttons reveal" style="--i:4">
+              <a href="Fabio_Henrique_CV.pdf" download class="btn-primary">
+                <i data-lucide="download"></i>
+                Download CV
+              </a>
+              <a href="#contato" class="btn-outline">
+                <i data-lucide="send"></i>
+                Entre em contato
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <img src="dev.jpeg" alt="Fabio Henrique — Desenvolvedor Full-Stack" class="hero-photo" />
+              <div class="hero-image-overlay"></div>
+            </div>
+            <div class="status-badge">
+              <span class="available-dot"></span>
+              Disponível
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+    <section class="about" id="sobre">
+      <div class="container">
+        <div class="about-grid">
+          <div class="reveal reveal-left">
+            <p class="section-label">Sobre mim</p>
+            <h2 class="about-quote">
+              Construo soluções digitais que conectam marcas aos seus clientes com design limpo e código eficiente.
+            </h2>
+          </div>
+          <div class="reveal reveal-right">
+            <div class="about-body">
+              <p>
+                Sou um desenvolvedor full-stack apaixonado por criar experiências web que fazem a diferença. Com foco em React, JavaScript e Firebase, transformo ideias em produtos digitais funcionais e bonitos.
+              </p>
+              <p>
+                Tenho experiência com e-commerce, aplicações financeiras e landing pages, sempre buscando o equilíbrio perfeito entre estética, performance e funcionalidade.
+              </p>
+              <div class="about-stats">
+                <div class="about-stat">
+                  <h4>3+ Projetos Entregues</h4>
+                  <p>Soluções completas em produção</p>
+                </div>
+                <div class="about-stat">
+                  <h4>Foco em Resultados</h4>
+                  <p>Design orientado à conversão</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="services-header reveal">
+          <div class="services-header-text">
+            <p class="section-label">Serviços</p>
+            <h2 class="section-title">O que eu faço</h2>
+          </div>
+          <p class="services-header-desc">Soluções completas para transformar sua presença digital e impulsionar resultados.</p>
+        </div>
+        <div class="services-grid stagger-children">
+          <div class="service-card reveal" style="--i:0">
+            <div class="service-icon">
+              <i data-lucide="code"></i>
+            </div>
+            <h4>Desenvolvimento Web</h4>
+            <p>Aplicações web modernas e responsivas com as melhores tecnologias do mercado como React, Next.js e Node.js.</p>
+          </div>
+          <div class="service-card reveal" style="--i:1">
+            <div class="service-icon">
+              <i data-lucide="shopping-cart"></i>
+            </div>
+            <h4>E-commerce & Catálogos</h4>
+            <p>Lojas online e catálogos digitais com integração WhatsApp, painel administrativo e gestão de produtos.</p>
+          </div>
+          <div class="service-card reveal" style="--i:2">
+            <div class="service-icon">
+              <i data-lucide="layout"></i>
+            </div>
+            <h4>Landing Pages</h4>
+            <p>Páginas de alta conversão com design atrativo, animações suaves e performance otimizada para SEO.</p>
+          </div>
+          <div class="service-card reveal" style="--i:3">
+            <div class="service-icon">
+              <i data-lucide="palette"></i>
+            </div>
+            <h4>UI/UX Design</h4>
+            <p>Interfaces intuitivas e bonitas que proporcionam a melhor experiência ao usuário em qualquer dispositivo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stack" id="stack">
+      <div class="container">
+        <div class="stack-header reveal">
+          <p class="section-label">Ferramentas & Tecnologias</p>
+          <h2 class="section-title">Tech Stack</h2>
+        </div>
+        <div class="stack-grid stagger-children">
+          <div class="stack-card reveal" style="--i:0">
+            <h4>Core</h4>
+            <div class="stack-tags">
+              <span class="stack-tag">JavaScript</span>
+              <span class="stack-tag">TypeScript</span>
+              <span class="stack-tag">HTML5</span>
+              <span class="stack-tag">CSS3</span>
+              <span class="stack-tag">React</span>
+            </div>
+          </div>
+          <div class="stack-card reveal" style="--i:1">
+            <h4>Front-End</h4>
+            <div class="stack-tags">
+              <span class="stack-tag">React</span>
+              <span class="stack-tag">Next.js</span>
+              <span class="stack-tag">Tailwind CSS</span>
+              <span class="stack-tag">Vite</span>
+            </div>
+          </div>
+          <div class="stack-card reveal" style="--i:2">
+            <h4>Back-End</h4>
+            <div class="stack-tags">
+              <span class="stack-tag">Node.js</span>
+              <span class="stack-tag">Firebase</span>
+              <span class="stack-tag">REST APIs</span>
+              <span class="stack-tag">SQL</span>
+            </div>
+          </div>
+          <div class="stack-card reveal" style="--i:3">
+            <h4>Cloud & Deploy</h4>
+            <div class="stack-tags">
+              <span class="stack-tag">Vercel</span>
+              <span class="stack-tag">Cloudinary</span>
+              <span class="stack-tag">Git & GitHub</span>
+            </div>
+          </div>
+          <div class="stack-card reveal" style="--i:4">
+            <h4>Design & Ferramentas</h4>
+            <div class="stack-tags">
+              <span class="stack-tag">Figma</span>
+              <span class="stack-tag">UI/UX</span>
+              <span class="stack-tag">Responsive Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projetos">
+      <div class="container">
+        <div class="projects-header reveal">
+          <p class="section-label">Projetos Selecionados</p>
+          <h2 class="section-title">Trabalhos Recentes</h2>
+        </div>
+        <div class="projects-list">
+          <a href="https://moneytrail-fabio.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card reveal" style="--i:0">
+            <div class="project-info">
+              <span class="project-category">Web App / Finanças</span>
+              <h4>MoneyTrail</h4>
+              <p class="project-desc">Aplicação de controle financeiro pessoal com dashboard visual para rastreamento de receitas e despesas em tempo real. Interface moderna e responsiva construída com React.</p>
+            </div>
+            <div class="project-meta">
+              <span class="project-impact">Dashboard em tempo real</span>
+              <div class="project-arrow">
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.doceriafloripa.com.br/" target="_blank" rel="noopener noreferrer" class="project-card reveal" style="--i:1">
+            <div class="project-info">
+              <span class="project-category">E-commerce / Confeitaria</span>
+              <h4>Doceria Floripa</h4>
+              <p class="project-desc">Catálogo digital completo para confeitaria artesanal com integração WhatsApp, painel administrativo para gestão de produtos via Firebase e Cloudinary.</p>
+            </div>
+            <div class="project-meta">
+              <span class="project-impact">Catálogo + Painel Admin</span>
+              <div class="project-arrow">
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.donnacestasfloripa.com.br/" target="_blank" rel="noopener noreferrer" class="project-card reveal" style="--i:2">
+            <div class="project-info">
+              <span class="project-category">E-commerce / Presentes</span>
+              <h4>Donna Cestas Floripa</h4>
+              <p class="project-desc">Loja online de cestas de café da manhã e presentes gourmet com catálogo por categoria, delivery local e pedidos direto via WhatsApp.</p>
+            </div>
+            <div class="project-meta">
+              <span class="project-impact">E-commerce completo</span>
+              <div class="project-arrow">
+                <i data-lucide="arrow-up-right"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <p class="projects-more reveal">Mais projetos em breve — acompanhe no GitHub.</p>
+      </div>
+    </section>
+    <section class="contact" id="contato">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <p class="section-label reveal">Contato</p>
+            <h2 class="contact-title reveal" style="--i:1">
+              Vamos criar algo <span class="serif">incrível</span> juntos.
+            </h2>
+            <p class="contact-description reveal" style="--i:2">
+              Tem um projeto em mente? Vamos conversar sobre como posso ajudar a transformar sua ideia em realidade digital.
+            </p>
+            <div class="social-links reveal" style="--i:3">
+              <a href="https://github.com/fabiothieres" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <i data-lucide="github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/fabiothieres/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+              </a>
+              <a href="mailto:fabiohenriquethieres@gmail.com" class="social-link" aria-label="Email">
+                <i data-lucide="mail"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact-actions reveal" style="--i:2">
+            <a href="mailto:fabiohenriquethieres@gmail.com" class="contact-card">
+              <div>
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-action">Enviar mensagem</span>
+              </div>
+              <div class="arrow">
+                <i data-lucide="arrow-right"></i>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/fabiothieres/" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div>
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-action">Vamos conectar</span>
+              </div>
+              <div class="arrow">
+                <i data-lucide="arrow-right"></i>
+              </div>
+            </a>
+            <a href="https://github.com/fabiothieres" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div>
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-action">Ver meu código</span>
+              </div>
+              <div class="arrow">
+                <i data-lucide="arrow-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-copy">&copy; <script>document.write(new Date().getFullYear())</script> Fabio Henrique. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="https://github.com/fabiothieres" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/fabiothieres/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        </div>
+        <div class="footer-available">
+          <span class="dot"></span>
+          Disponível para projetos
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
